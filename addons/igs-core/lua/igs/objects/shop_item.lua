@@ -73,6 +73,10 @@ function STORE_ITEM:SetDescription(sDesc,bAppend)
 	return set(self,"description",bAppend and (self:Description() .. sDesc) or sDesc)
 end
 
+function STORE_ITEM:SetWColor(iColor)
+    return set(self,"color",iColor)
+end
+
 function STORE_ITEM:Description()
 	return self.description
 end
